@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_4f5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzDLConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "azdlscontainer"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

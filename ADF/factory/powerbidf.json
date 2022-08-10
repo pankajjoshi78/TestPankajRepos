@@ -1,0 +1,9 @@
+{
+	"name": "powerbidf",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c7812e0b-0809-43f2-920d-92ebed1bc129",
+		"tenantId": "73e92490-fa79-46b3-8193-684778c7aacd"
+	}
+}
