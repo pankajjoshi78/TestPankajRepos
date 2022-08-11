@@ -1,5 +1,5 @@
 {
-	"name": "SourceDataset_4f5",
+	"name": "SourceDataset_AgentAPI",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "RestService1",
