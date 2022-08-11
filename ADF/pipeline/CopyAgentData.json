@@ -27,13 +27,9 @@
 						"requestMethod": "GET"
 					},
 					"sink": {
-						"type": "JsonSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "JsonWriteSettings"
-						}
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"validateDataConsistency": true,
@@ -59,7 +55,7 @@
 									"path": "$['Id']"
 								},
 								"sink": {
-									"path": "$['Id']"
+									"name": "id"
 								}
 							},
 							{
@@ -67,7 +63,7 @@
 									"path": "$['Username']"
 								},
 								"sink": {
-									"path": "$['Username']"
+									"name": "username"
 								}
 							},
 							{
@@ -75,7 +71,7 @@
 									"path": "$['FirstName']"
 								},
 								"sink": {
-									"path": "$['FirstName']"
+									"name": "firstname"
 								}
 							},
 							{
@@ -83,7 +79,7 @@
 									"path": "$['LastName']"
 								},
 								"sink": {
-									"path": "$['LastName']"
+									"name": "lastname"
 								}
 							},
 							{
@@ -105,7 +101,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_4f5",
+						"referenceName": "DestDatasetSQL_Agents",
 						"type": "DatasetReference"
 					}
 				]
