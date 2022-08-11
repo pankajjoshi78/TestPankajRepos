@@ -87,7 +87,7 @@
 									"path": "$['EmailAddress']"
 								},
 								"sink": {
-									"path": "$['EmailAddress']"
+									"name": "emailaddress"
 								}
 							}
 						]
