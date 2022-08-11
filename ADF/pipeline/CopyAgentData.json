@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_4f5",
+				"name": "Copy_Activity_Agent",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
