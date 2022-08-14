@@ -25,12 +25,11 @@
 						}
 					},
 					"sink": {
-						"type": "RestSink",
-						"httpRequestTimeout": "00:01:40",
-						"requestInterval": 10,
-						"requestMethod": "POST",
-						"writeBatchSize": 10000,
-						"httpCompressionType": "none"
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false
 				},
@@ -42,7 +41,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "RestAPI_IncomingvoiceCalls",
+						"referenceName": "AzureSqlTableDSCallsData",
 						"type": "DatasetReference"
 					}
 				]

@@ -1,0 +1,12 @@
+{
+	"name": "AzureSqlTableDSCallsData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDBVoiceCalls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
