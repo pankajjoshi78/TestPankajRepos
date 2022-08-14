@@ -1,19 +1,13 @@
 {
 	"name": "RestAPI_lnkService_IncomingCalls",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://pop0-apps.mycontactcenter.net/api/v2/hist/incomingvoicecalls",
+			"url": "https://pop0-apps.mycontactcenter.net/api/v2/hist/incomingvoicecalls/2022-08-11",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous",
-			"authHeaders": {
-				"token": {
-					"type": "SecureString",
-					"value": "**********"
-				}
-			}
+			"authenticationType": "Anonymous"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
