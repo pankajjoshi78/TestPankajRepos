@@ -1,0 +1,12 @@
+{
+	"name": "RestAPI_IncomingvoiceCalls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestAPI_lnkService_IncomingCalls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
